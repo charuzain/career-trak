@@ -1,10 +1,11 @@
 import landingImg from '../../assets/images/landing.svg';
-import logo from '../../assets/images/logo1.svg';
+import logo from '../../assets/images/logo2.ico';
 const Landing = () => {
   return (
     <>
       <nav>
         <img src={logo} alt="logo" />
+        <p>Trackify</p>
       </nav>
       <main>
         <div>
