@@ -20,9 +20,9 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <RouterProvider router={router} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
