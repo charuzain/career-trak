@@ -10,3 +10,24 @@
     @content;
   }
 }
+
+
+@mixin btn{
+ background-color: $color-btn;
+ border: none;
+ padding: 1rem 1.5rem;
+ border-radius: 5px;
+ font:$font-mobile-buttons;
+}
+
+@mixin link{
+   text-decoration: none;
+    color: white;
+    background-color: $color-btn;
+    padding: 0.7rem 2.5rem;
+    text-align: left;
+    border-radius: 6px;
+    letter-spacing: 0.1rem;
+    font: $font-tablet-labels;
+    font-size: 1.2rem;
+}
