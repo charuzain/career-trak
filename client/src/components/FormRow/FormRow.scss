@@ -1,0 +1,17 @@
+.form-row{
+  margin-bottom: 1rem;
+
+  &__label{
+    color:#fff;
+    margin-bottom :0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+  }
+
+  &__input{
+    height:1.8rem;
+    width: 100%;
+    border-radius: .3125rem;
+    padding:1rem;
+  }
+}

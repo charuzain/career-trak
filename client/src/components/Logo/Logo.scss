@@ -1,0 +1,30 @@
+@use '../../styles/partials/resets';
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.logo{
+ background-color: $color-bg;
+ padding-bottom:2rem ; 
+//  border: 2px solid red;
+
+  &__container {
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    margin: auto;
+
+  }
+
+  &__name{
+    color:$color-btn;
+        font-family: $font-family;
+        font-weight: 900;
+        letter-spacing: 0.3rem;
+
+
+
+  }
+}
