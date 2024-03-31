@@ -1,0 +1,73 @@
+@use '../../styles/partials/variables' as *;
+.login{
+  background-color: $color-bg;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    &__logo{
+    margin: 2rem 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   color: $color-btn;
+   font-size: 1.5rem;
+   font-weight: 700;
+   letter-spacing: 0.1rem;
+  //  flex-grow: 1;
+  //  background-color:#3f3f3f;
+  
+  }
+
+  &__container{
+    background-color:#3f3f3f;
+    // border: 2px solid yellow;
+    width: 100%;
+    max-width: 35rem;
+    border-top: 5px solid $color-btn;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px;
+    padding: 2rem;
+  }
+
+
+  &__form-container {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__btn {
+    border: none;
+    background-color: $color-btn;
+    flex-grow: 1;
+    padding: 0.5rem;
+    border-radius: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+
+  &__description {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+
+  &__register {
+    color: $color-btn;
+    margin-left: 0.2rem;
+  }
+
+}

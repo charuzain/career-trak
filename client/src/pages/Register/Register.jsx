@@ -48,11 +48,7 @@ const Register = () => {
               name="password"
               defaultValue="password"
             />
-            {/* <FormRow />
-          <FormRow />
-          <FormRow />
-          <FormRow /> */}
-
+            
             <button className="register__btn" type="submit">
               Submit
             </button>
