@@ -1,8 +1,10 @@
+import { useDashBoardContext } from '../../pages/DashBoardLayout/DashBoardLayout';
 import './SmallSideBar.scss';
 const SmallSideBar = () => {
-  return (
-    <div className="smallsidebar">SmallSideBar</div>
-  )
-}
+  const data = useDashBoardContext();
 
-export default SmallSideBar
+  console.log(data);
+  return <div className="smallsidebar">SmallSideBar</div>;
+};
+
+export default SmallSideBar;
