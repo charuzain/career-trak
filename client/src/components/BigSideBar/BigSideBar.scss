@@ -1,0 +1,14 @@
+
+
+@use '../../styles/partials/mixins' as *;
+.bigsidebar{
+  background-color: red;
+  padding: 2rem;
+  font-size: 2rem;
+  display: none;
+  
+  @include desktop{
+//  visibility: visible;
+display: block;
+  }
+}

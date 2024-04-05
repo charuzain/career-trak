@@ -1,1 +1,15 @@
+@use '../../styles/partials/mixins' as *;
 
+.dashboard{
+display: flex;
+flex-direction: column;
+
+@include desktop{
+  flex-direction: row;
+}
+
+&__page{
+  background-color: pink;
+}
+
+}
