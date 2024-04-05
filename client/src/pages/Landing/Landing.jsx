@@ -1,21 +1,22 @@
 import { Link } from 'react-router-dom';
 import landingImg from '../../assets/images/landing.svg';
-import logo from '../../assets/images/logo2.ico';
 import './Landing.scss';
+import Logo from '../../components/Logo/Logo';
 const Landing = () => {
   return (
-    <div className='container'>
-      <nav className="logo">
+    <div className="container">
+      <Logo/>
+      {/* <nav className="logo">
         <div className="logo__container">
           <img src={logo} alt="logo" />
           <p className="logo__name">Trackify</p>
         </div>
-      </nav>
+      </nav> */}
       <main className="landing">
         <div className="landing__wrapper">
           <div className="landing__container">
             <h1 className="landing__title">
-              Job <span className='landing__title--colored'>Tracking</span> App
+              Job <span className="landing__title--colored">Tracking</span> App
             </h1>
             <p className="landing__description">
               Get ready to turn your job hunt into a breeze with our super cool
@@ -28,8 +29,12 @@ const Landing = () => {
               and exciting opportunities ahead! 🚀🎉 */}
             </p>
             <div className="link">
-              <Link to ="#" className='link__register'>Register</Link>
-              <Link to ="#" className='link__login'>Login</Link>
+              <Link to="/register" className="link__register">
+                Register
+              </Link>
+              <Link to="/login" className="link__login">
+                Login
+              </Link>
             </div>
           </div>
 

@@ -1,0 +1,13 @@
+@use '../../styles/partials/mixins' as *;
+.smallsidebar{
+  background-color: red;
+  padding: 2rem;
+  font-size: 2rem;
+  display: block;
+ 
+  
+  @include desktop{
+//  visibility: visible;
+display: none;
+  }
+}
