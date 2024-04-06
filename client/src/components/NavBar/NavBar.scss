@@ -1,0 +1,39 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border:2px solid red;
+  padding: 1rem ;
+  background-color: #3f3f3f;
+  // margin:2rem;
+
+  &__button{
+        background-color: transparent;
+    border: transparent;
+  }
+&__icon{
+color: $color-btn;
+font-size: 1.5rem;
+}
+  &__logo{
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__brandname{
+    color: #fff;
+    // font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &__btn{
+    @include btn;
+    font-size: 1rem;
+  }
+}

@@ -1,8 +1,10 @@
-import './BigSideBar.scss'
+import { useDashBoardContext } from '../../pages/DashBoardLayout/DashBoardLayout';
+import './BigSideBar.scss';
 const BigSideBar = () => {
-  return (
-    <div className="bigsidebar">BigSideBar</div>
-  )
-}
+  const data = useDashBoardContext()
+  console.log(data.showSideBar)
+  return <div className={data.showSideBar ? 
+  "bigsidebar" : "sidebar"}>BigSideBar</div>;
+};
 
-export default BigSideBar
+export default BigSideBar;

@@ -2,13 +2,21 @@
 
 @use '../../styles/partials/mixins' as *;
 .bigsidebar{
-  background-color: red;
+  background-color: #3f3f3f;
   padding: 2rem;
   font-size: 2rem;
   display: none;
+  height: 100vh;
   
   @include desktop{
 //  visibility: visible;
 display: block;
   }
+}
+
+.sidebar{
+  display: none;
+  // @include desktop{
+  //   display: none ;
+  // }
 }

@@ -26,8 +26,8 @@ const DashBoardLayout = () => {
       value={{ user, showSideBar, darkTheme, toggleSideBar, logOutUser }}
     >
       <div className="dashboard">
-        <SmallSideBar />
-        <BigSideBar />
+          <SmallSideBar />
+          <BigSideBar />
         <div className="dashboard__page">
           <NavBar />
           <Outlet />
